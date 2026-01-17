@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Rizal.css">
+</head>
+<body>
+    <img src="abstract-envelope.svg" id="navimg">
+    <nav id="navigation">
+        <a href="#" onclick="showTab(event, 'home')" style="color: #2980b9;">HOME</a>
+        <a href="#about" style="color: #2980b9;">ABOUT</a>
+        <a href="#contactus"style="color: #2980b9;" >CONTACTUS</a>
+        <a href="#learnmore"style="color: #2980b9;">LEARNMORE</a>
+        <a href="#body"style="color: #2980b9;" >VIEW CONTENT</a>
+
+    </nav>
+
+    <section id="section">
+       <img src="free-high-resolution-rizal-day-background-3bx2h.svg" alt="rizal with phil flag">
+    </section>
+
+    <div id="body">
+    <div id="choices">
+       <button id="btn1"onclick="showTab(event, 'tab1')">Biography About Rizal</button>
+       <button id="btn2" onclick="showTab(event, 'tab2')">Early Childhood Of Rizal</button>
+       <button id="btn3" onclick="showTab(event, 'tab3')">Education Of Rizal</button>
+       <button id="btn4" onclick="showTab(event, 'tab4')">Philosophies Of Rizal</button>
+       <button id="btn5" onclick="showTab(event, 'tab5')">Travels Of Rizal</button>
+       <button id="btn6" onclick="showTab(event, 'tab6')">Rizal's Love Life</button>
+       <button id="btn7" onclick="showTab(event, 'tab7')">Rizal's Gallery</button>
+       <button id="btn8" onclick="showTab(event, 'tab8')">Poems</button>
+       <button id="btn9" onclick="showTab(event, 'tab9')">Noli me Tangheri</button>
+       <button id="btn10" onclick="showTab(event, 'tab10')">El filibusterismo</button>
+       <button id="btn11" onclick="showTab(event, 'tab11')">Rizal Family</button>
+       <button id="btn12"      onclick="showTab(event, 'tab12')">Story of Rizal (Summarized)</button>
+    </div>
+    
+
+    <div id="home" style="display: flex;" class="tab-content"> <style>
+        /* Encapsulated styles for the Rizal section */
+        .rizal-container {
+            font-family: 'Georgia', serif;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #ffffff;
+            border: 1px solid #d1d1d1;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            color: #222;
+            overflow: hidden;
+        }
+
+        /* Welcome Header */
+        .rizal-hero {
+            background-color: #02266e; /* Philippine Blue */
+            color: #ffffff;
+            width: 100%;
+            height: 450px;
+            text-align: center;
+           padding-top: 50px;
+           padding-bottom: 60px;
+            border-bottom: 3px solid red; 
+           border: 3px solid black;
+        }
+        
+
+        .rizal-hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: white;
+        }
+
+        .rizal-hero p {
+            margin-top: 10px;
+            font-style: italic;
+            opacity: 0.9;
+            color: white;
+        }
+
+        /* Equal Height Body Section */
+        .rizal-body {
+            display: flex;
+            align-items: stretch; /* This forces equal height */
+            flex-wrap: wrap; /* Allows stacking on small screens */
+        }
+
+        /* Text Content Area */
+        .rizal-info {
+            flex: 1.5;
+            padding: 40px;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rizal-info h2 {
+            color: #b22222;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .rizal-info p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        /* Image Container (Fixed to match text height) */
+        .rizal-media-box {
+            flex: 1;
+            background-color: #f9f7f2; /* Subtle parchment color */
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centers SVG vertically */
+            align-items: center;    /* Centers SVG horizontally */
+            padding: 20px;
+            border-left: 1px solid #eee;
+        }
+
+        .rizal-media-box img {
+            width: 90%;
+            height: 90%;
+            object-fit: contain; /* Keeps SVG proportions while filling height */
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+        }
+
+        .rizal-caption {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #666;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        /* Responsive Fix for Mobile */
+        @media (max-width: 768px) {
+            .rizal-body {
+                flex-direction: column;
+            }
+            .rizal-media-box {
+                border-left: none;
+                border-top: 1px solid #eee;
+                min-height: 300px;
+            }
+        }
+    </style>
+
+    <header class="rizal-hero">
+        
+        <h1>Welcome to Rizal Website</h1>
+        <p>National Hero of the Philippines | Physician | Novelist</p>
+    </header>
+
+    <div class="rizal-body">
+        
+        <article class="rizal-info">
+            <h2>The Pride of the Malayan Race</h2>
+            <p>
+                Dr. Jose Rizal (1861–1896) was a Filipino polymath whose life and 
+                works were instrumental in the Philippine struggle for independence. 
+                As a brilliant scholar who mastered over 22 languages, he used 
+                knowledge and literature rather than violence to challenge colonial rule.
+            </p>
+            <p>
+                His two most famous novels, <strong>Noli Me Tángere</strong> and 
+                <strong>El Filibusterismo</strong>, exposed the corruption of the 
+                colonial era and unified the Filipino spirit. Today, he remains 
+                a symbol of peaceful resistance and intellectual excellence.
+            </p>
+        </article>
+
+        <div class="rizal-media-box">
+            <img src="stathome.svg" 
+                 alt="A clean SVG illustration of Dr. Jose Rizal, showcasing his profile or a symbol associated with his works such as a quill and a lamp.">
+            <div class="rizal-caption">Visual Representation of Dr. Jose Rizal</div>
+        </div>
+
+    </div>
+         </div>
+
+
+    <!---TAB1----------------------------------------------------------------------------->
+    <div id="tab1" class="tab-content">
+     <div class="rizal-bio-modern-red">
+    <style>
+        /* Scoped styles - Modern Red Theme */
+        .rizal-bio-modern-red {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            color: #2c1a1a; /* Dark text with a hint of red */
+        }
+
+        /* Header Styling */
+        .rizal-bio-modern-red .hero-header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 20px;
+        }
+
+        .rizal-bio-modern-red h1 {
+            color: #c0392b; /* Primary Red */
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .rizal-bio-modern-red .subtitle {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+        /* Portrait Container */
+        .rizal-bio-modern-red .portrait-frame {
+            float: left;
+            margin: 0 30px 20px 0;
+            padding: 10px;
+            border: 4px double #c0392b;
+            background-color: #fff;
+            box-shadow: 10px 10px 0px #f9ebea;
+        }
+
+        .rizal-bio-modern-red .portrait-frame img {
+            max-width: 220px;
+            height: auto;
+            display: block;
+            filter: grayscale(100%) contrast(1.2); /* Black & white looks better with the red theme */
+        }
+
+        /* Content Text */
+        .rizal-bio-modern-red h2 {
+            color: #c0392b;
+            font-size: 1.4rem;
+            margin-top: 0;
+            display: inline-block;
+            border-bottom: 3px solid #e74c3c;
+        }
+
+        .rizal-bio-modern-red p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .rizal-bio-modern-red strong {
+            color: #c0392b;
+        }
+
+        /* Red Quote Box */
+        .rizal-bio-modern-red .quote-container {
+            clear: both;
+            background: #c0392b;
+            color: #ffffff;
+            padding: 25px;
+            border-radius: 4px;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .rizal-bio-modern-red .quote-container blockquote {
+            font-size: 1.25rem;
+            font-style: italic;
+            margin: 0;
+            text-align: center;
+            border: none;
+        }
+
+        /* Clearfix */
+        .rizal-bio-modern-red::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media (max-width: 600px) {
+            .rizal-bio-modern-red .portrait-frame {
+                float: none;
+                margin: 0 auto 20px auto;
+                width: fit-content;
+            }
+        }
+    </style>
+
+    <header class="hero-header">
+        <h1>José Rizal</h1>
+        <p class="subtitle">The Great Malayan • 1861–1896</p>
+    </header>
+
+    <div class="portrait-frame">
+        <img src="rizalbio.svg" alt="Jose Rizal Portrait">
+    </div>
+
+    <section>
+        <h2>Architect of Liberty</h2>
+        <p>
+            <strong>José Protasio Rizal</strong> was a man of peace who used his intellect to challenge an empire. As a physician and a scholar, he understood that the "social cancer" affecting the Philippines could only be cured by exposing the truth through education and literature.
+        </p>
+
+        <p>
+            His travels across Europe allowed him to gather support for the <strong>Propaganda Movement</strong>. By blending his medical expertise with a sharp literary mind, he became a voice for the voiceless, demanding dignity and legal equality for all Filipinos.
+        </p>
+
+        <div class="quote-container">
+            <blockquote>"I wish to show those who deny us Patriotism that we know how to die for our duty and our convictions."</blockquote>
+        </div>
+
+        <h2>A Legacy in Ink</h2>
+        <p>
+            His novels, <em>Noli Me Tángere</em> and <em>El Filibusterismo</em>, remain the foundation of Filipino literature. These works did not just tell stories; they acted as a mirror, forcing the colonial society to see its own corruption. His ultimate sacrifice at <strong>Bagumbayan</strong> turned a writer into a martyr and a martyr into a symbol of a nation's birth.
+        </p>
+    </section>
+</div>
+    
+
+</div>
+    <!-----------------TAB1--------------------------------------------------------------->
+
+
+
+    <!--TAB2---------------------------------------------------------------------------->
+       <div id="tab2" class="tab-content"><style>
+        .rizal-childhood-card {
+            max-width: 850px;
+            margin: 20px auto;
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #333;
+            background: #fffdf9; /* Slight paper tint */
+            border: 2px solid #e0d5c1;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+        }
+
+        /* Image Container Styling */
+        .image-showcase {
+       
+            width: 100%;
+            height: 100px;
+            
+            position: relative;
+            
+            border-bottom: 5px solid #ff0000; /* Gold accent */
+        }
+
+        .image-showcase img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 0.85rem;
+            font-family: sans-serif;
+        }
+
+        .content-padding {
+            padding: 40px;
+        }
+
+        .rizal-childhood-card h1 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .rizal-childhood-card .subtitle {
+            text-align: center;
+            display: block;
+            color: #888;
+            font-style: italic;
+            margin-bottom: 30px;
+            font-family: sans-serif;
+        }
+
+        .childhood-highlight {
+            background: #fdf2f2;
+            border-left: 4px solid #c0392b;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .section-title {
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #c0392b;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-top: 25px;
+            display: block;
+        }
+
+        /* List for early achievements */
+        .milestones {
+            list-style: none;
+            padding: 0;
+        }
+
+        .milestones li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .milestones li::before {
+            content: "•";
+            color: #d4af37;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+    </style>
+
+    <div class="image-showcase">
+        <img src="calambachild.svg" alt="A heritage illustration or photo of the Rizal Shrine in Calamba, Laguna, a two-story Spanish-colonial style stone house where Jose Rizal was born.">
+        <div class="image-caption">The Rizal Ancestral House in Calamba, Laguna.</div>
+    </div>
+
+    <div class="content-padding">
+        <span class="subtitle">The Making of a Genius</span>
+        <h1>The Early Years of Pepe</h1>
+
+        <p>Born on the moonlight night of <strong>Wednesday, June 19, 1861</strong>, in the lakeside town of Calamba, José Rizal was the seventh of eleven children. His mother, Teodora Alonso, almost lost her life during his delivery because of his unusually large head—an early physical sign of the giant intellect he would eventually possess.</p>
+
+        <span class="section-title">The Influence of Doña Teodora</span>
+        <p>His first teacher was his mother. At the age of three, he learned the alphabet and the prayers from her. She taught him the value of discipline and the beauty of literature through the famous story of the <strong>"Moth and the Flame,"</strong> which left a lasting impression on young José about the cost of seeking the light of truth.</p>
+
+        <div class="childhood-highlight">
+            "My mother is a woman of more than average education... She knows literature and speaks Spanish better than I do. She corrected my poems and gave me good advice when I was studying rhetoric." — Jose Rizal
+        </div>
+
+        <span class="section-title">Early Signs of Artistry</span>
+        <p>Even as a child known by the nickname "Pepe," Rizal showed remarkable talents that amazed his family and townspeople:</p>
+        
+        <ul class="milestones">
+            <li><strong>Age 5:</strong> He began to sketch and mold clay/wax figures of animals and people.</li>
+            <li><strong>Age 8:</strong> He wrote his first poem in the native language, <em>"Sa Aking Mga Kabata"</em> (To My Fellow Youth), which championed the love for one's own language.</li>
+            <li><strong>Religious Devotion:</strong> Young José was a regular at the town church and was often jokingly called "Manong José" because of his piety.</li>
+        </ul>
+
+        <p>Despite being small and somewhat frail in stature, he spent his afternoons walking by the shores of Laguna de Bay with his dog, Usman, wondering what lay across the waters and dreaming of a better future for his people.</p>
+    </div>
+       </div>
+    <!--TAB2---------------------------------------------------------------------------->
+
+
+
+
+    <!--TAB3---------------------------------------------------------------------------->
+       <div id="tab3" class="tab-content"><style>
+        .rizal-master-edu {
+            max-width: 900px;
+            margin: 30px auto;
+            font-family: 'Georgia', serif;
+            background: #fff;
+            color: #000000;
+            border-radius: 15px;
+            
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+            border: 1px solid #d1d1d1;
+        }
+
+        .header-section {
+            background: gray;
+            border: 2px solid black;
+            color: #000000;
+            padding: 25px 20px;
+            text-align: center;
+            border-bottom: 1px solid white ;
+        }
+
+        .header-section h1 { margin: 0; font-size: 2.2rem; text-transform: uppercase; letter-spacing: 3px; }
+        .header-section p { color: #000000; font-style: italic; margin-top: 10px; }
+
+        .image-frame {
+            width: 100%;
+            height: 100px;
+            background: #eee;
+            border-bottom: 5px solid #000000;
+        }
+
+        .image-frame img {
+            width: 100%; height: 100%; object-fit: cover;
+        }
+
+        .timeline-container {
+            padding: 40px;
+            position: relative;
+        }
+
+        /* The vertical line */
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            left: 50px;
+            top: 40px;
+            bottom: 40px;
+            width: 2px;
+            background: #e0e0e0;
+        }
+
+        .edu-node {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 50px;
+        }
+
+        /* The dots on the line */
+        .edu-node::after {
+            content: '';
+            position: absolute;
+            left: 42px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            background: #c0392b;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .edu-node h2 {
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 1.1rem;
+            color: #c0392b;
+            text-transform: uppercase;
+        }
+
+        .edu-node .location {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .edu-node p {
+            line-height: 1.7;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .achievement-tag {
+            display: inline-block;
+            background: #f4f4f4;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #2c3e50;
+            border-left: 3px solid #f1c40f;
+        }
+
+        .closing-quote {
+            background: #f9f9f9;
+            padding: 30px;
+            text-align: center;
+            font-style: italic;
+            border-top: 1px solid #eee;
+        }
+    </style>
+
+    <div class="header-section">
+        <h1 style="color: white;">Lifelong Education</h1>
+        <p>The Intellectual Evolution of José Rizal (1861 – 1896)</p>
+    </div>
+
+    <div class="image-frame">
+        <img src="schooledu.svg" alt="A historical gallery showing the young Jose Rizal, the classroom at Ateneo Municipal, and his medical certificates from Spain.">
+    </div>
+
+    <div class="timeline-container">
+        
+        <div class="edu-node">
+            <h2>The First Teacher</h2>
+            <span class="location">Calamba & Biñan (1864 – 1871)</span>
+            <p>Rizal’s education began at home with his mother, <strong>Teodora Alonso</strong>, who taught him the alphabet and prayers. At age 9, he was sent to Biñan to study under Maestro Justiniano Aquino Cruz, where he quickly exhausted the local curriculum, mastering Latin and Spanish faster than any other student.</p>
+            <span class="achievement-tag">First Lessons in Latin & Spanish</span>
+        </div>
+
+        <div class="edu-node">
+            <h2>The Jesuit Discipline</h2>
+            <span class="location">Ateneo Municipal de Manila (1872 – 1877)</span>
+            <p>Entering as a teenager, Rizal excelled in the rigid Jesuit system. He was a consistent "Emperor" of his class and graduated at 16 with a Bachelor of Arts degree. He also earned a vocational title as a <strong>Perito Agrimensor</strong> (Expert Surveyor) during this time.</p>
+            <span class="achievement-tag">Graduated Summa Cum Laude (Sobresaliente)</span>
+        </div>
+
+        <div class="edu-node">
+            <h2>Philosophy & Medicine</h2>
+            <span class="location">University of Santo Tomas (1877 – 1882)</span>
+            <p>He balanced studies in Philosophy and Letters with a specialized track in Medicine. It was here that his mother's failing eyesight led him to choose <strong>Ophthalmology</strong> as his life's vocation.</p>
+            <span class="achievement-tag">Shift to Medical Sciences</span>
+        </div>
+
+        <div class="edu-node">
+            <h2>The Global Scholar</h2>
+            <span class="location">Spain, France, & Germany (1882 – 1887)</span>
+            <p>In Europe, he completed his Licentiate in Medicine at the <strong>Universidad Central de Madrid</strong>. He then traveled to Paris and Heidelberg to train under the world's leading eye surgeons, becoming one of the most skilled ophthalmologists of the 19th century.</p>
+            <span class="achievement-tag">Doctor of Medicine | Master of 22 Languages</span>
+        </div>
+
+        <div class="edu-node">
+            <h2>The Practical Educator</h2>
+            <span class="location">Exile in Dapitan (1892 – 1896)</span>
+            <p>Even in exile, his "education" continued. He conducted scientific research in biology and engineering and founded a school for local boys, teaching them languages, mathematics, and martial arts, embodying his belief that "knowledge is the path to freedom."</p>
+            <span class="achievement-tag">Scientist, Engineer, and Mentor</span>
+        </div>
+
+    </div>
+
+    <div class="closing-quote">
+        "Without education and liberty, that soil and that sun of mankind, no reform is possible." <br>— José Rizal
+    </div>
+         </div>
+    <!--TAB3---------------------------------------------------------------------------->
+
+
+   <!---TAB4---------------------------------------------------------------------------->
+       <div id="tab4" class="tab-content"> <style>
+        .rizal-philosophy-card {
+            max-width: 900px;
+            margin: 30px auto;
+            font-family: 'Palatino', 'URW Palladio L', serif;
+            background-color: #fffcf5; /* Parchment-like background */
+            color: #2c3e50;
+            border: 1px solid #d3c4a9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+        }
+
+        .philosophy-hero {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background-color: #1a1a1a;
+        }
+
+        .philosophy-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 40px;
+            background: linear-gradient(transparent, #fffcf5);
+            text-align: center;
+        }
+
+        .hero-overlay h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .phil-item {
+            padding: 20px;
+            border-bottom: 3px solid #c0392b;
+            background: rgba(255,255,255,0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .phil-item:hover {
+            transform: translateY(-5px);
+            background: #fff;
+        }
+
+        .phil-item h2 {
+            font-family: sans-serif;
+            font-size: 1.1rem;
+            color: #c0392b;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .phil-item p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .core-quote {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 30px;
+            margin: 20px 0;
+            border: 2px dashed #d3c4a9;
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .hero-overlay h1 { font-size: 1.8rem; }
+        }
+    </style>
+
+    <div class="philosophy-hero">
+        <img src="writephilo.svg" alt="A conceptual image representing Enlightenment, such as an open book with a quill, or a statue of Rizal in a thoughtful pose overlooking a city.">
+        <div class="hero-overlay">
+            <h1>The Mind of a Reformer</h1>
+        </div>
+    </div>
+
+    <div class="philosophy-grid">
+        <div class="core-quote">
+            "I have always loved my poor country, and I am sure that I shall love her until my last moment... I shall die praying for her."
+        </div>
+
+        <div class="phil-item">
+            <h2>Education as Liberation</h2>
+            <p>Rizal believed that the "Social Cancer" of the Philippines could only be cured through <strong>Education</strong>. He argued that a people cannot be free until they are enlightened and capable of self-governance.</p>
+        </div>
+
+        <div class="phil-item">
+            <h2>Non-Violent Reform</h2>
+            <p>Unlike the Katipunan's initial push for armed revolt, Rizal’s philosophy focused on <strong>Assimilation and Representation</strong>. He believed in winning freedom through the pen, the law, and moral integrity.</p>
+        </div>
+
+        <div class="phil-item">
+            <h2>Racial Equality</h2>
+            <p>Through his scientific and historical research, Rizal dismantled the "Indio" stereotype. He proved that Filipinos were naturally capable and that their "indolence" was a result of colonial oppression, not biology.</p>
+        </div>
+
+        <div class="phil-item">
+            <h2>The "New Filipino"</h2>
+            <p>He envisioned a <strong>New Society</strong> where Filipinos were not just subjects of Spain, but citizens of the world—disciplined, hardworking, and deeply rooted in their own culture and language.</p>
+        </div>
+
+        <div class="phil-item">
+            <h2>Religious Reason</h2>
+            <p>Rizal was not anti-religion, but anti-fanaticism. He advocated for a <strong>Faith guided by Reason</strong>, criticizing the friars for using religion to keep the masses in ignorance and fear.</p>
+        </div>
+
+        <div class="phil-item">
+            <h2>Nationalism</h2>
+            <p>His philosophy of <strong>Love of Country</strong> was not based on hatred of foreigners, but on the duty of every Filipino to improve themselves for the sake of the motherland.</p>
+        </div>
+    </div>  </div>
+   <!--TAB4----------------------------------------------------------------------------->    
+
+
+   <!-----TAB5-------------------------------------------------------------------------->
+       <div id="tab5" class="tab-content"><style>
+        .rizal-travel-encyclopedia {
+            max-width: 1000px;
+            margin: 30px auto;
+            font-family: 'Cambria', serif;
+            background: #fff;
+            color: #222;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+        }
+
+        /* 1. IMAGE CONTAINER */
+        .travel-banner {
+            width: 100%;
+            height: 150px;
+            background-color: #333;
+            
+            border-bottom: 8px solid #c0392b;
+        }
+
+        .travel-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .travel-main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            padding: 40px;
+            gap: 40px;
+        }
+
+        .travel-details h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+            color: #c0392b;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .travel-section {
+            margin-bottom: 35px;
+        }
+
+        .travel-section h2 {
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .travel-section h2::before {
+            content: '✈';
+            margin-right: 10px;
+            color: #c0392b;
+        }
+
+        .travel-section p {
+            line-height: 1.8;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        /* Sidebar for Quick Facts */
+        .travel-sidebar {
+            background: #f4f4f4;
+            padding: 25px;
+            border-radius: 8px;
+            height: fit-content;
+        }
+
+        .sidebar-title {
+            font-weight: bold;
+            font-family: sans-serif;
+            display: block;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #c0392b;
+            padding-bottom: 5px;
+        }
+
+        .sidebar-list {
+            list-style: none;
+            padding: 0;
+            font-size: 0.9rem;
+        }
+
+        .sidebar-list li {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .tag {
+            background: #c0392b;
+            color: white;
+            padding: 2px 8px;
+            font-size: 0.7rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 800px) {
+            .travel-main { grid-template-columns: 1fr; }
+            .travel-banner { height: 300px; }
+        }
+    </style>
+
+    <div class="travel-banner">
+    </div>
+
+    <div class="travel-main">
+        <div class="travel-details">
+            <h1>The Grand Tour of a Reformer</h1>
+            
+            <div class="travel-section">
+                <h2>The First Departure (1882)</h2>
+                <p>Leaving the Philippines secretly to avoid Spanish suspicion, Rizal traveled via the <strong>Suez Canal</strong> to Spain. In <strong>Barcelona</strong>, he wrote <em>"Amor Patrio"</em> (Love of Country), his first nationalistic essay on foreign soil. He later moved to <strong>Madrid</strong> to complete his licentiate in Medicine and Philosophy, immersing himself in the liberal atmosphere of the Spanish capital.</p>
+            </div>
+
+            
+
+            <div class="travel-section">
+                <h2>The Scientific Specialization (1885-1887)</h2>
+                <p>Rizal moved to <strong>Paris</strong> to work as an assistant to Dr. Louis de Wecker, a world-renowned ophthalmologist. He then headed to <strong>Heidelberg, Germany</strong>, where he famously wrote the poem <em>"A las Flores de Heidelberg."</em> In Berlin, he befriended great scientists like Dr. Rudolf Virchow and finally published 2,000 copies of <em>Noli Me Tángere</em> with the financial help of Maximo Viola.</p>
+            </div>
+
+            <div class="travel-section">
+                <h2>The 1888 World Tour</h2>
+                <p>After a brief and dangerous return to the Philippines, Rizal left again. He visited <strong>Hong Kong</strong> and <strong>Macau</strong>, then spent a month in <strong>Japan</strong>, where he studied Japanese art, music, and the Ju-jitsu style of self-defense. He then crossed the Pacific to <strong>San Francisco</strong> and traveled across the entire United States by train, arriving in <strong>New York</strong> before sailing to London.</p>
+            </div>
+
+            
+
+            <div class="travel-section">
+                <h2>The London Annotation (1888-1889)</h2>
+                <p>In <strong>London</strong>, Rizal stayed with the Beckett family and spent his days at the British Museum. He manually copied and annotated Antonio de Morga's <em>Sucesos de las Islas Filipinas</em>. This was his most important historical work, as it proved to the world that Filipinos had a flourishing civilization before the Spanish arrived.</p>
+            </div>
+        </div>
+
+        <aside class="travel-sidebar">
+            <span class="sidebar-title">Vessel & Voyage Facts</span>
+            <ul class="sidebar-list">
+                <li><span class="tag">Ship</span> <strong>SS Salvadora:</strong> The ship that first carried him away from Manila in 1882.</li>
+                <li><span class="tag">Ship</span> <strong>SS Belgic:</strong> The steamer he took from Japan to San Francisco in 1888.</li>
+                <li><span class="tag">Fact</span> <strong>USA Observations:</strong> While he loved American progress, he wrote that it was "the land par excellence of freedom but only for the whites."</li>
+                <li><span class="tag">Fact</span> <strong>Belgium:</strong> In 1891, he stayed in Ghent to print his second novel, <em>El Filibusterismo</em>, while living in extreme poverty.</li>
+            </ul>
+        </aside>
+    </div>  </div>
+   <!-----TAB5-------------------------------------------------------------------------->
+
+
+   <!--TAB6----------------------------------------------------------------------------->
+       <div id="tab6" class="tab-content">  <style>
+        :root {
+            --primary-color: #ff0d0d;
+            --accent-color: #000000;
+            --bg-color: #f5f5f5;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Single Main Container */
+        .rizal-lovelife-wrapper {
+            max-width: 100%;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid var(--primary-color);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px double var(--primary-color);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        /* Relationship Card Styles */
+        .love-interest {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .love-interest:last-child {
+            border-bottom: none;
+        }
+
+        /* Image Container */
+        .image-container {
+            flex: 1 1 250px;
+            max-width: 300px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 5px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            background-color: #ddd; /* Placeholder color */
+        }
+
+        .content {
+            flex: 2 1 400px;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 2px 10px;
+            font-size: 0.8rem;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+    <div class="rizal-lovelife-wrapper">
+        
+        <header>
+            <h1>Jose Rizal: The Romantic Hero</h1>
+            <p>Exploring the hearts he touched across the globe.</p>
+        </header>
+
+        <p class="intro">While Dr. Jose Rizal is celebrated for his patriotism, his personal life was a tapestry of deep affections and bittersweet partings. Here are the women who played a role in the life of the Great Malayan.</p>
+
+        <section class="love-interest">
+            <div class="image-container">
+                <img src="segunda2.svg" alt="A portrait of Segunda Katigbak, Rizal's first puppy love from Lipa, Batangas">
+            </div>
+            <div class="content">
+                <span class="tag">The Puppy Love</span>
+                <h2>Segunda Katigbak</h2>
+                <p>Met when Rizal was only 16, Segunda was his "first love." However, she was already engaged to Manuel Luz. Their relationship ended with a quiet, painful goodbye as Rizal was too shy to profess his feelings directly.</p>
+            </div>
+        </section>
+
+        <section class="love-interest">
+            <div class="image-container">
+                <img src="leonor.svg" alt="Sketch of Leonor Valenzuela, known for Rizal's invisible ink letters">
+            </div>
+            <div class="content">
+                <span class="tag">The Girl Next Door</span>
+                <h2>Leonor Valenzuela (Orang)</h2>
+                <p>His neighbor in Intramuros. Rizal courted her using "invisible ink" (saltwater and lamp warmth). It was a lighthearted romance that faded when he left for Spain.</p>
+            </div>
+        </section>
+
+        <section class="love-interest">
+            <div class="image-container">
+                <img src="Leonor-Rivera.svg" alt="Leonor Rivera, Rizal's cousin and most significant love, the inspiration for Maria Clara">
+            </div>
+            <div class="content">
+                <span class="tag">The One True Love</span>
+                <h2>Leonor Rivera</h2>
+                <p>His cousin and sweetheart for 11 years. She is the inspiration for <em>Maria Clara</em> in his novels. Their love was thwarted by her mother and distance, eventually ending in her tragic marriage to Henry Kipping.</p>
+            </div>
+        </section>
+
+        <section class="love-interest">
+            <div class="image-container">
+                <img src="Consuelo-Ortiga.svg" alt="Consuelo Ortiga y Rey, a Spanish lady Rizal met in Madrid">
+            </div>
+            <div class="content">
+                <span class="tag">The Madrid Memory</span>
+                <h2>Consuelo Ortiga y Rey</h2>
+                <p>A beautiful woman in Madrid to whom Rizal dedicated a poem. He backed out of the relationship to remain loyal to Leonor Rivera and to avoid conflict with his friend Eduardo de Lete.</p>
+            </div>
+        </section>
+
+        <section class="love-interest">
+            <div class="image-container">
+                <img src="usui.svg" alt="Seiko Usui, the Japanese woman who captivated Rizal in Tokyo">
+            </div>
+            <div class="content">
+                <span class="tag">The Woman of Japan</span>
+                <h2>Seiko Usui (O-Sei-San)</h2>
+                <p>A Japanese samurai's daughter who taught Rizal painting and Japanese language. He almost stayed in Japan for her, but his patriotic mission called him back to Europe.</p>
+            </div>
+        </section>
+
+        <section class="love-interest">
+            <div class="image-container">
+                <img src="Gertrude-Beckett.svg" alt="Gertrude Beckett, the Londoner who helped Rizal with his sculptures">
+            </div>
+            <div class="content">
+                <span class="tag">The London Companion</span>
+                <h2>Gertrude Beckett</h2>
+                <p>The daughter of his landlord in London. She fell deeply in love with him, but Rizal eventually left for Paris to avoid leading her on, as he could not reciprocate her feelings.</p>
+            </div>
+        </section>
+
+        <section class="love-interest">
+            <div class="image-container">
+                <img src="nellie.svg" alt="Nellie Boustead, the high-minded woman from Biarritz">
+            </div>
+            <div class="content">
+                <span class="tag">The Almost Engagement</span>
+                <h2>Nellie Boustead</h2>
+                <p>An intelligent and athletic woman. Rizal proposed marriage, but it failed because he refused to convert to Protestantism and her mother disapproved of him.</p>
+            </div>
+        </section>
+
+        <section class="love-interest">
+            <div class="image-container">
+                <img src="suzanne.svg" alt="Suzanne Jacoby from Brussels who wrote letters to Rizal after he left">
+            </div>
+            <div class="content">
+                <span class="tag">The Belgian Romance</span>
+                <h2>Suzanne Jacoby</h2>
+                <p>They met while Rizal was staying at a boarding house in Brussels. She was heartbroken when he left for Madrid, writing him letters of longing.</p>
+            </div>
+        </section>
+
+        <section class="love-interest">
+            <div class="image-container">
+                <img src="bracken.svg" alt="Josephine Bracken, Rizal's common-law wife in Dapitan">
+            </div>
+            <div class="content">
+                <span class="tag">The Final Partner</span>
+                <h2>Josephine Bracken</h2>
+                <p>An Irish woman who met Rizal in Dapitan. She became his common-law wife and stayed by his side until his execution in 1896. She is famously called his "dulce extranjera."</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Historical Perspectives: The Love Life of Dr. Jose Rizal</p>
+        </footer>
+
+    </div> </div>
+   <!--TAB6----------------------------------------------------------------------------->
+
+
+    <!--TAB7---------------------------------------------------------------------------->
+       <div id="tab7" class="tab-content"> 
+     <div id="rizal-art-gallery">
+
+    <style>
+        /* Scoped styles for a Museum/Gallery aesthetic */
+        #rizal-art-gallery {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            color: #2c2c2c;
+            line-height: 1.6;
+            padding: 40px;
+            background-color: #f9f7f2; /* Canvas color */
+            border: 10px solid #3e2723; /* Dark wood frame effect */
+        }
+
+        #rizal-art-gallery header {
+            text-align: center;
+            border-bottom: 1px solid #d4af37; /* Gold accent */
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+        }
+
+        #rizal-art-gallery h1 {
+            font-size: 2.5rem;
+            color: #3e2723;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        #rizal-art-gallery .gallery-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            font-style: italic;
+            color: #5d4037;
+        }
+
+        #rizal-art-gallery .art-category {
+            margin-bottom: 60px;
+        }
+
+        #rizal-art-gallery h2 {
+            background-color: #3e2723;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        #rizal-art-gallery .art-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        #rizal-art-gallery .art-card {
+            background: white;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+
+        #rizal-art-gallery .image-placeholder {
+            width: 100%;
+            height: 250px;
+            background-color: #eee;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #rizal-art-gallery .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid #999;
+        }
+
+        #rizal-art-gallery .art-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #b71c1c;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        #rizal-art-gallery .art-desc {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        #rizal-art-gallery footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            border-top: 1px solid #d4af37;
+            padding-top: 20px;
+            color: #8d6e63;
+        }
+    </style>
+
+    <header>
+        <h1>The Rizal Art Gallery</h1>
+        <p>A Showcase of the Hero's Visual Masterpieces</p>
+    </header>
+
+    <p class="gallery-intro">
+        Dr. Jose Rizal was not just a man of words, but a man of visual precision. From his childhood in Calamba to his exile in Dapitan, he used his hands to carve, sketch, and paint the soul of his nation.
+    </p>
+
+    <section class="art-category">
+        <h2>Sculptures</h2>
+        <div class="art-grid">
+            <div class="art-card">
+                <div class="image-placeholder">
+                    <img src="triump.svg" alt="The 'Triumph of Science over Death' sculpture, featuring a young woman holding a torch over a skull.">
+                </div>
+                <span class="art-title">The Triumph of Science over Death</span>
+                <p class="art-desc">Created during his stay in Brussels, this clay sculpture depicts a young, naked woman standing upon a skull while holding a torch, symbolizing human enlightenment conquering mortality.</p>
+            </div>
+            <div class="art-card">
+                <div class="image-placeholder">
+                    <img src="the mother.svg" alt="A clay sculpture known as 'The Mother's Revenge' showing a mother dog attacking a crocodile that has caught her puppy.">
+                </div>
+                <span class="art-title">The Mother's Revenge</span>
+                <p class="art-desc">Made in Dapitan, this allegorical piece shows a mother dog attacking a crocodile. It is widely interpreted as a symbol of the Philippines' struggle against colonial oppression.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="art-category">
+        <h2>Sketches & Drawings</h2>
+        <div class="art-grid">
+            <div class="art-card">
+                <div class="image-placeholder">
+                    <img src="sketch.svg" alt="A detailed pencil sketch of Jose Rizal's own face, known as his 1887 self-portrait.">
+                </div>
+                <span class="art-title">Self-Portrait (1887)</span>
+                <p class="art-desc">Rizal was a master of the pencil. This self-portrait, drawn during his time in Germany, shows his meticulous attention to detail and his deep, contemplative gaze.</p>
+            </div>
+            <div class="art-card">
+                <div class="image-placeholder">
+                    <img src="leonorsketch.svg" alt="A delicate pencil drawing of Leonor Rivera, Rizal's sweetheart, made from his memory.">
+                </div>
+                <span class="art-title">Leonor Rivera</span>
+                <p class="art-desc">Rizal often sketched the people he loved. This sketch of Leonor Rivera remains one of the most iconic images of his "true love," capturing her grace and melancholy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="art-category">
+        <h2>Paintings</h2>
+        <div class="art-grid">
+            <div class="art-card">
+                <div class="image-placeholder">
+                    <img src="saturnina.svg" alt="An oil painting portrait of Saturnina Rizal, Jose's eldest sister.">
+                </div>
+                <span class="art-title">Portrait of Saturnina</span>
+                <p class="art-desc">One of the few surviving oil paintings by Rizal. It shows his eldest sister, Saturnina, and demonstrates his skill in handling color and light in the European classical style.</p>
+            </div>
+            <div class="art-card">
+                <div class="image-placeholder">
+                    <img src="paintig.svg" alt="A watercolor painting of a coat of arms or a landscape from Rizal's travel diary.">
+                </div>
+                <span class="art-title">Travel Sketches & Watercolors</span>
+                <p class="art-desc">Rizal filled his diaries with watercolors of the landscapes he saw in Spain, France, and Germany, serving as a visual record of his travels and botanical observations.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>"To the Filipino people, I leave the work of my hands as a testament to the beauty of our race."</p>
+    </footer>
+
+</div>
+
+
+       </div>
+    <!--TAB7---------------------------------------------------------------------------->
+
+    
+    <!----TAB8-------------------------------------------------------------------------->
+       <div id="tab8" class="tab-content"><div id="rizal-poems-portfolio">
+
+    <style>
+        /* All styles are scoped to this specific ID to avoid affecting your body/main container */
+        #rizal-poems-portfolio {
+            font-family: 'Times New Roman', Times, serif;
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        #rizal-poems-portfolio header {
+            text-align: center;
+            border-bottom: 2px solid #8e44ad;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        #rizal-poems-portfolio .poem-entry {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 60px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        #rizal-poems-portfolio .image-frame {
+            flex: 1 1 300px;
+            max-width: 90%;
+            max-height: 500px;
+        }
+
+        #rizal-poems-portfolio .image-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+            background-color: #f0f0f0;
+            display: block;
+        }
+
+        #rizal-poems-portfolio .poem-details {
+            flex: 2 1 400px;
+        }
+
+        #rizal-poems-portfolio h2 {
+            color: #8e44ad;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        #rizal-poems-portfolio .metadata {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        #rizal-poems-portfolio .description-text {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        #rizal-poems-portfolio .analysis-box {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #8e44ad;
+            font-size: 0.95rem;
+        }
+
+        #rizal-poems-portfolio footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-top: 50px;
+        }
+    </style>
+
+    <header>
+        <h1>The Poetic Works of Dr. Jose Rizal</h1>
+        <p>A comprehensive collection of the National Hero's literary contributions.</p>
+    </header>
+
+    <section class="poem-entry">
+        <div class="image-frame">
+            <img src="mi ultimo.svg" alt="Historical manuscript of Mi Ultimo Adios or a photo of the alcohol stove where it was hidden.">
+        </div>
+        <div class="poem-details">
+            <span class="metadata">Written: December 1896 | Language: Spanish</span>
+            <h2>Mi Último Adiós (My Last Farewell)</h2>
+            <p class="description-text">
+                Rizal's final literary gift to his country, written in his cell at Fort Santiago before his execution. He didn't give it a title; his friends later named it. It serves as a stirring goodbye to his "Patria Adorada" (Adored Fatherland).
+            </p>
+            <div class="analysis-box">
+                <strong>Significance:</strong> It redefined Filipino patriotism, showing that one can serve the country through the ultimate sacrifice of life.
+            </div>
+        </div>
+    </section>
+
+    <section class="poem-entry">
+        <div class="image-frame">
+            <img src="kids.svg" alt="An artistic depiction of Filipino youth looking towards the sun or a laurel wreath representing victory.">
+        </div>
+        <div class="poem-details">
+            <span class="metadata">Written: 1879 | Language: Spanish</span>
+            <h2>A La Juventud Filipina (To the Philippine Youth)</h2>
+            <p class="description-text">
+                Written when he was a student at UST, this poem won first prize in a literary contest. It was groundbreaking because it openly referred to the Philippines as the "Fatherland" (Patria) of the Filipinos, rather than Spain.
+            </p>
+            <div class="analysis-box">
+                <strong>Significance:</strong> It contains the famous line calling the youth the "Fair hope of my Fatherland," urging them to seek excellence in arts and sciences.
+            </div>
+        </div>
+    </section>
+
+    <section class="poem-entry">
+        <div class="image-frame">
+            <img src="baybayin.svg" alt="An illustration of traditional Tagalog script (Baybayin) or a peaceful river scene in Calamba.">
+        </div>
+        <div class="poem-details">
+            <span class="metadata">Written: 1869 (at age 8) | Language: Tagalog</span>
+            <h2>Sa Aking Mga Kabatà (To My Fellow Youth)</h2>
+            <p class="description-text">
+                Commonly attributed to an 8-year-old Rizal, this poem emphasizes the love for one's native language. It argues that language is a gift from God and a symbol of liberty.
+            </p>
+            <div class="analysis-box">
+                <strong>Significance:</strong> It establishes the idea that national identity is tied to linguistic pride: "He who does not love his own language is worse than a beast and a stinking fish."
+            </div>
+        </div>
+    </section>
+
+    <section class="poem-entry">
+        <div class="image-frame">
+            <img src="river.svg" alt="A photo of the Neckar River in Germany or Forget-Me-Not flowers pressed in a book.">
+        </div>
+        <div class="poem-details">
+            <span class="metadata">Written: 1886 | Language: Spanish</span>
+            <h2>A Las Flores de Heidelberg (To the Flowers of Heidelberg)</h2>
+            <p class="description-text">
+                Written during his time in Germany. Overwhelmed by homesickness while walking along the Neckar River, Rizal wrote to the flowers, asking them to carry his message of faith and love back to the Philippines.
+            </p>
+            <div class="analysis-box">
+                <strong>Significance:</strong> A poignant look at Rizal's vulnerability and his constant longing for his home despite the beauty of Europe.
+            </div>
+        </div>
+    </section>
+
+    <section class="poem-entry">
+        <div class="image-frame">
+            <img src="talisay.svg" alt="A landscape of the Talisay estate in Dapitan showing the beach and the simple bamboo huts.">
+        </div>
+        <div class="poem-details">
+            <span class="metadata">Written: 1895 | Language: Spanish</span>
+            <h2>Mi Retiro (My Retreat)</h2>
+            <p class="description-text">
+                Rizal wrote this during his exile in Dapitan. It is a long, descriptive poem about his simple, lonely, but peaceful life by the sea, written at the request of his mother.
+            </p>
+            <div class="analysis-box">
+                <strong>Significance:</strong> Shows Rizal’s resilience and his ability to find beauty and intellectual stimulation even while being a political prisoner.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Collection compiled for educational purposes &copy; 2025</p>
+    </footer>
+
+</div>  </div>
+    <!---TAB8--------------------------------------------------------------------------->
+
+    
+    <!--TAB9---------------------------------------------------------------------------->
+       <div id="tab9" class="tab-content"> <div id="rizal-noli-portfolio">
+
+    <style>
+        /* Scoped styles to prevent interference with your page */
+        #rizal-noli-portfolio {
+            font-family: 'Georgia', serif;
+            color: #3e2723;
+            line-height: 1.7;
+            padding: 30px;
+            background-color: #fffaf0; /* Light parchment feel */
+            border: 1px solid #d7ccc8;
+        }
+
+        #rizal-noli-portfolio header {
+            text-align: center;
+            border-bottom: 3px double #795548;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        #rizal-noli-portfolio h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #5d4037;
+        }
+
+        #rizal-noli-portfolio .intro-text {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        #rizal-noli-portfolio .noli-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+            align-items: flex-start;
+        }
+
+        #rizal-noli-portfolio .image-container {
+            flex: 1 1 300px;
+            max-width: 100%;
+        }
+
+        #rizal-noli-portfolio .image-container img {
+            width: 100%;
+            height: auto;
+            border: 8px solid #efebe9;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            display: block;
+        }
+
+        #rizal-noli-portfolio .text-container {
+            flex: 2 1 400px;
+        }
+
+        #rizal-noli-portfolio h2 {
+            color: #d32f2f; /* Blood/Ink red for emphasis */
+            margin-top: 0;
+            border-left: 5px solid #d32f2f;
+            padding-left: 15px;
+        }
+
+        #rizal-noli-portfolio ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #rizal-noli-portfolio ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        #rizal-noli-portfolio ul li::before {
+            content: "•";
+            color: #d32f2f;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        #rizal-noli-portfolio .context-box {
+            background: #efebe9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        #rizal-noli-portfolio footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.85rem;
+            color: #8d6e63;
+        }
+    </style>
+
+    <header>
+        <h1>Noli Me Tangere</h1>
+        <p>The "Social Cancer" that Awakened a Nation</p>
+    </header>
+
+    <p class="intro-text">
+        Published in Berlin in 1887, this novel was Rizal’s diagnosis of the Philippine society under Spanish colonial rule. It exposed the corruption of the clergy and the government, sparking the flames of the Philippine Revolution.
+    </p>
+
+    <div class="noli-section">
+        <div class="image-container">
+            <img src="nolimeee.svg" alt="The original cover of Noli Me Tangere showing Rizal's signature, a woman's head, and bamboo stalks.">
+        </div>
+        <div class="text-container">
+            <h2>The History of the Book</h2>
+            <p>Rizal began writing the novel in Madrid, continued it in Paris, and finished the final chapters in Germany. He was nearly destitute and almost burned the manuscript until his friend, <strong>Maximo Viola</strong>, loaned him the money for printing 2,000 copies.</p>
+            <div class="context-box">
+                <strong>The Meaning:</strong> The title is Latin for "Touch Me Not," a reference to John 20:17. Rizal used this to describe a "cancer" so terrible that the slightest touch causes excruciating pain to the patient (the Philippines).
+            </div>
+        </div>
+    </div>
+
+    <div class="noli-section">
+        <div class="image-container">
+            <img src="ibara.svg" alt="A classic illustration of Crisostomo Ibarra in a European suit and Maria Clara in a traditional Filipina gown.">
+        </div>
+        <div class="text-container">
+            <h2>The Symbolic Characters</h2>
+            <ul>
+                <li><strong>Juan Crisostomo Ibarra:</strong> A reform-minded Filipino who returned from Europe. He represents Rizal's own idealistic side.</li>
+                <li><strong>Maria Clara:</strong> The epitome of Filipino womanhood, representing the oppressed but graceful Motherland.</li>
+                <li><strong>Padre Damaso:</strong> The arrogant Franciscan friar who represents the abusive power of the Spanish clergy.</li>
+                <li><strong>Elias:</strong> The mysterious pilot and outlaw who represents the common people (Filipino masses) ready for revolution.</li>
+                <li><strong>Sisa:</strong> A mother driven to insanity, symbolizing the tragic state of the suffering Philippines.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="noli-section">
+        <div class="image-container">
+            <img src="townplaza.svg" alt="An old sketch of a typical 19th-century Philippine town plaza with a large stone church and a convento.">
+        </div>
+        <div class="text-container">
+            <h2>The Storyline</h2>
+            <p>The story follows Ibarra's return to San Diego to build a school. However, he discovers the truth behind his father's death—persecuted by the friars and denied a Christian burial. His efforts for reform are met with a staged rebellion intended to frame him, leading to his imprisonment and the tragic loss of Maria Clara to a nunnery.</p>
+            <p>The novel ends with the death of Elias, who sacrifices himself so that Ibarra (representing the hope of the nation) can escape to fight another day.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>“I have unmasked the hypocrisy that under the guide of religion came to impoverish and to brutalize us.” — Jose Rizal</p>
+    </footer>
+
+</div> </div>
+    <!--TAB9---------------------------------------------------------------------------->
+
+
+    <!--TAB10--------------------------------------------------------------------------->
+       <div id="tab10" class="tab-content"><div id="rizal-fili-portfolio">
+
+    <style>
+        /* Scoped styles to capture the darker, more somber tone of the sequel */
+        #rizal-fili-portfolio {
+            font-family: 'Constantia', 'Palatino', serif;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding: 30px;
+            background-color: #f2f2f2; /* Grittier, gray-toned background */
+            border: 1px solid #333;
+        }
+
+        #rizal-fili-portfolio header {
+            text-align: center;
+            border-bottom: 4px solid #1b5e20; /* Dark green theme, associated with the Fili cover */
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        #rizal-fili-portfolio h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #1b5e20;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        #rizal-fili-portfolio .novel-intro {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 40px auto;
+            font-weight: bold;
+            color: #444;
+        }
+
+        #rizal-fili-portfolio .fili-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        #rizal-fili-portfolio .img-box {
+            flex: 1 1 280px;
+            max-width: 100%;
+        }
+
+        #rizal-fili-portfolio .img-box img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #1b5e20;
+            box-shadow: 10px 10px 0px #1b5e20; /* Hard shadow for a "bold" look */
+            display: block;
+        }
+
+        #rizal-fili-portfolio .info-box {
+            flex: 2 1 400px;
+        }
+
+        #rizal-fili-portfolio h2 {
+            color: #1b5e20;
+            margin-top: 0;
+            font-variant: small-caps;
+        }
+
+        #rizal-fili-portfolio .fili-tag {
+            background: #1b5e20;
+            color: white;
+            padding: 3px 12px;
+            font-size: 0.8rem;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        #rizal-fili-portfolio .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        #rizal-fili-portfolio .comparison-table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        #rizal-fili-portfolio footer {
+            text-align: center;
+            margin-top: 50px;
+            font-style: italic;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+    </style>
+
+    <header>
+        <h1>El Filibusterismo</h1>
+        <p>The Reign of Greed | The Sequel of Revolution</p>
+    </header>
+
+    <p class="novel-intro">
+        Published in Ghent, Belgium in 1891, El Filibusterismo is the more political, darker, and more cynical sequel to Noli Me Tangere. It shifts from the hope of reform to the inevitability of revolution.
+    </p>
+
+    <div class="fili-row">
+        <div class="img-box">
+            <img src="simoun.jpg" alt="A depiction of Simoun the Jeweler with dark tinted glasses, a beard, and a treasure chest, looking vengeful.">
+        </div>
+        <div class="info-box">
+            <span class="fili-tag">The Protagonist</span>
+            <h2>From Ibarra to Simoun</h2>
+            <p>Thirteen years after fleeing the Philippines, Crisostomo Ibarra returns as <strong>Simoun</strong>, a wealthy and influential jeweler. No longer an idealist, he has become a "dark cardinal" who uses his wealth to corrupt Spanish officials, hoping to provoke a revolution by making the people's suffering unbearable.</p>
+            <p><em>"Simoun does not want reform; he wants to destroy the system from within."</em></p>
+        </div>
+    </div>
+
+    <div class="fili-row">
+        <div class="img-box">
+            <img src="lamp.svg" alt="An ornate kerosene lamp shaped like a pomegranate, intended to be a bomb for the wedding of Paulita Gomez.">
+        </div>
+        <div class="info-box">
+            <span class="fili-tag">The Climax</span>
+            <h2>The Pomegranate Lamp</h2>
+            <p>The novel centers on Simoun’s failed attempt to blow up a wedding feast attended by the Governor-General and the friars. He creates a nitro-glycerin bomb hidden inside an ornate lamp. The plan fails when <strong>Isagani</strong>, out of love for the bride, throws the lamp into the river, inadvertently saving the colonizers.</p>
+            <div class="comparison-table">
+                <table>
+                    <tr><td><strong>Tone:</strong></td><td>Political, Bitter, Revenge-driven</td></tr>
+                    <tr><td><strong>Key Conflict:</strong></td><td>Violent Revolution vs. Peaceful Reform</td></tr>
+                    <tr><td><strong>Ending:</strong></td><td>The death of Simoun and the disposal of his treasure into the sea.</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="fili-row">
+        <div class="img-box">
+            <img src="preist.svg" alt="The execution of the three priests: Gomez, Burgos, and Zamora (GOMBURZA) by garrote.">
+        </div>
+        <div class="info-box">
+            <span class="fili-tag">The Inspiration</span>
+            <h2>Dedicated to GOMBURZA</h2>
+            <p>Rizal dedicated this second novel to the memory of the three priests—<strong>Mariano Gomez, Jose Burgos, and Jacinto Zamora</strong>—who were executed in 1872. This event was the catalyst for Rizal's own political awakening and the "filibuster" (subversive) sentiment in the Philippines.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>“Where are the youth who will consecrate their golden hours, their illusions, and their enthusiasm to the welfare of their native land?” — Padre Florentino, El Filibusterismo</p>
+    </footer>
+
+</div>  </div>
+    <!---TAB10-------------------------------------------------------------------------->
+
+
+    <!--TAB11--------------------------------------------------------------------------->
+       <div id="tab11" class="tab-content">  <div id="rizal-family-portfolio">
+
+    <style>
+        /* Scoped styles for a classic, family-tree aesthetic */
+        #rizal-family-portfolio {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2e2e2e;
+            line-height: 1.6;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px dashed #7f8c8d;
+        }
+
+        #rizal-family-portfolio header {
+            text-align: center;
+            border-bottom: 5px solid #2980b9; /* Deep blue representing the family's dignity */
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        #rizal-family-portfolio h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        #rizal-family-portfolio .family-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            color: #555;
+        }
+
+        #rizal-family-portfolio .family-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 45px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 30px;
+        }
+
+        #rizal-family-portfolio .family-section:last-child {
+            border-bottom: none;
+        }
+
+        #rizal-family-portfolio .img-container {
+            flex: 1 1 250px;
+            max-width: 100%;
+        }
+
+        #rizal-family-portfolio .img-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%; /* Circular for a portrait feel */
+            border: 4px solid #2980b9;
+            display: block;
+        }
+
+        #rizal-family-portfolio .family-info {
+            flex: 2 1 400px;
+        }
+
+        #rizal-family-portfolio h2 {
+            color: #2980b9;
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        #rizal-family-portfolio .role-label {
+            font-weight: bold;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #rizal-family-portfolio .sibling-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        #rizal-family-portfolio .sibling-item {
+            background: #f4f7f6;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        #rizal-family-portfolio footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #95a5a6;
+        }
+    </style>
+
+    <header>
+        <h1>The Mercado-Rizal Clan</h1>
+        <p>The Foundation of a Hero: The Family of Calamba</p>
+    </header>
+
+    <p class="family-intro">
+        Jose Rizal was born into a wealthy and educated family in Calamba, Laguna. He was the seventh of eleven children born to Francisco Mercado and Teodora Alonso.
+    </p>
+
+    <div class="family-section">
+        <div class="img-container">
+            <img src="francisco-mercado.jpg" alt="A portrait of Francisco Mercado Rizal, showing a dignified man with strong features, the patriarch of the family.">
+        </div>
+        <div class="family-info">
+            <span class="role-label">The Father</span>
+            <h2>Francisco Mercado Rizal</h2>
+            <p>A hardworking and independent-minded farmer from Biñan, Jose called him a "model of fathers." He leased lands from the Dominican estate in Calamba and was highly respected in the community. It was he who instilled in Jose the value of discipline and work ethic.</p>
+        </div>
+    </div>
+
+    <div class="family-section">
+        <div class="img-container">
+            <img src="teodora-alonso.jpg" alt="A portrait of Teodora Alonso Realonda, Jose Rizal's mother, a woman of high intelligence and refine manners.">
+        </div>
+        <div class="family-info">
+            <span class="role-label">The Mother</span>
+            <h2>Teodora Alonso Realonda</h2>
+            <p>Jose’s first teacher and his greatest influence. A woman of remarkable intelligence and refined culture, she was the one who taught Jose his alphabet and prayers. Her unjust imprisonment by the Spanish authorities was one of the primary reasons Jose pursued medicine (ophthalmology) to cure her failing eyesight.</p>
+        </div>
+    </div>
+
+    <div class="family-section">
+        <div class="img-container">
+            <img src="paciano-rizal.jpg" alt="A rare photograph of Paciano Rizal, Jose's only brother and mentor, looking stern and revolutionary.">
+        </div>
+        <div class="family-info">
+            <span class="role-label">The Second Father</span>
+            <h2>Paciano Rizal</h2>
+            <p>Jose’s only brother and his "mentor." Paciano was ten years older and served as a bridge between Jose and the revolutionary movement. He supported Jose’s studies in Europe financially and emotionally, acting as a second father to him throughout his life.</p>
+        </div>
+    </div>
+
+    <div class="family-section">
+        <div class="family-info" style="flex: 1 1 100%;">
+            <span class="role-label">The 11 Siblings</span>
+            <h2>The Rizal Sisters</h2>
+            <p>Jose grew up surrounded by nine sisters. Their bonds were close, and they were often his confidants during his exile and final days.</p>
+            
+            <div class="sibling-grid">
+                <div class="sibling-item"><strong>1. Saturnina:</strong> The eldest; helped fund Jose's education.</div>
+                <div class="sibling-item"><strong>2. Narcisa:</strong> The most hospitable; could recite all of Jose's poems.</div>
+                <div class="sibling-item"><strong>3. Olimpia:</strong> The sister who acted as the middleman between Jose and Segunda Katigbak.</div>
+                <div class="sibling-item"><strong>4. Lucia:</strong> Her husband was denied a Christian burial by friars, fueling Jose's anger.</div>
+                <div class="sibling-item"><strong>5. Maria:</strong> The sister Jose confided in about his plans to marry Josephine Bracken.</div>
+                <div class="sibling-item"><strong>6. Concepcion:</strong> "Concha," who died at age 3. Her death was Jose's first sorrow.</div>
+                <div class="sibling-item"><strong>7. Josefa:</strong> Joined the Katipunan and became one of its first female members.</div>
+                <div class="sibling-item"><strong>8. Trinidad:</strong> The one to whom Jose gave the alcohol lamp containing 'Mi Ultimo Adios'.</div>
+                <div class="sibling-item"><strong>9. Soledad:</strong> The youngest sibling; she was a teacher and the best-educated of the sisters.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>“I had a father, a mother, brothers and sisters; I was loved. Now I go to a foreign land, but not really foreign, for I feel I am at home everywhere.” — Jose Rizal</p>
+    </footer>
+
+</div></div>
+    <!--TAB11--------------------------------------------------------------------------->
+
+    <!--TAB12--------------------------------------------------------------------------->
+       <div id="tab12" class="tab-content"> <div id="rizal-biography-timeline">
+
+    <style>
+        /* Scoped styles for the biography timeline */
+        #rizal-biography-timeline {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px;
+            background-color: #fdfdfd;
+            border: 1px solid #e0e0e0;
+        }
+
+        #rizal-biography-timeline header {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+        }
+
+        #rizal-biography-timeline h1 {
+            font-size: 2.4rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        #rizal-biography-timeline .era-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        /* Timeline vertical line effect */
+        #rizal-biography-timeline .era-section::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #c0392b; /* Blood red for the life of a martyr */
+        }
+
+        #rizal-biography-timeline .image-box {
+            flex: 1 1 280px;
+            max-width: 100%;
+        }
+
+        #rizal-biography-timeline .image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            filter: grayscale(20%);
+        }
+
+        #rizal-biography-timeline .text-box {
+            flex: 2 1 400px;
+        }
+
+        #rizal-biography-timeline h2 {
+            color: #c0392b;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        #rizal-biography-timeline .year-label {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 4px 12px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        #rizal-biography-timeline h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        #rizal-biography-timeline footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 600px) {
+            #rizal-biography-timeline .era-section::before { display: none; }
+            #rizal-biography-timeline { padding: 20px; }
+        }
+    </style>
+
+    <header>
+        <h1>The Life and Martyrdom of Jose Rizal</h1>
+        <p>A Chronological Journey from Calamba to Bagumbayan</p>
+    </header>
+
+    <section class="era-section">
+        <div class="image-box">
+            <img src="rizal-birth.jpg" alt="A photo of the Rizal Shrine in Calamba, Laguna, the restored Spanish-colonial stone house where Jose was born.">
+        </div>
+        <div class="text-box">
+            <span class="year-label">1861 – 1870</span>
+            <h2>Birth and Early Childhood</h2>
+            <h3>The Seventh Child of Calamba</h3>
+            <p>Jose Protasio Rizal Mercado y Alonso Realonda was born on June 19, 1861, in Calamba, Laguna. He was a frail child with an unusually large head. His mother, Teodora, was his first teacher, telling him stories like the "Parable of the Moth" which foreshadowed his own fate of seeking the light of truth at the cost of his life.</p>
+        </div>
+    </section>
+
+    <section class="era-section">
+        <div class="image-box">
+            <img src="rizal-student.jpg" alt="A portrait of Jose Rizal as a young student at the Ateneo Municipal, wearing his school uniform.">
+        </div>
+        <div class="text-box">
+            <span class="year-label">1872 – 1882</span>
+            <h2>The Years of Learning</h2>
+            <h3>The Jesuit and Dominican Education</h3>
+            <p>Rizal entered <strong>Ateneo Municipal de Manila</strong>, where he excelled in every subject and graduated with highest honors. In 1872, the execution of the GOMBURZA priests deeply affected his family. He later studied Medicine at the University of Santo Tomas before deciding to finish his studies in Spain to escape the stifling atmosphere of the colony.</p>
+        </div>
+    </section>
+
+    <section class="era-section">
+        <div class="image-box">
+            <img src="propaganda-movement.jpg" alt="A famous photo of Jose Rizal with Marcelo H. Del Pilar and Mariano Ponce in Spain, representing the Propaganda Movement.">
+        </div>
+        <div class="text-box">
+            <span class="year-label">1882 – 1892</span>
+            <h2>The European Odyssey</h2>
+            <h3>Pen as the Sword</h3>
+            <p>In Europe, Rizal joined the Propaganda Movement, writing for <em>La Solidaridad</em>. He mastered multiple languages and completed his two greatest novels: <strong>Noli Me Tangere</strong> (1887) and <strong>El Filibusterismo</strong> (1891). These books exposed the "social cancer" of the Philippines, making him the primary enemy of the Spanish friars.</p>
+        </div>
+    </section>
+
+    <section class="era-section">
+        <div class="image-box">
+            <img src="rizal-dapitan.jpg" alt="A landscape of the Talisay estate in Dapitan showing Rizal's school and clinic by the sea.">
+        </div>
+        <div class="text-box">
+            <span class="year-label">1892 – 1896</span>
+            <h2>The Exile</h2>
+            <h3>The Enlightened Prisoner</h3>
+            <p>Upon his return to the Philippines, Rizal founded <em>La Liga Filipina</em>. He was quickly arrested and deported to <strong>Dapitan</strong>. During his four-year exile, he lived a productive life: practicing medicine, building a school for boys, improving the town’s water system, and discovering new species of animals.</p>
+        </div>
+    </section>
+
+    <section class="era-section">
+        <div class="image-box">
+            <img src="rizal-execution.jpg" alt="A dramatic painting or photograph of Jose Rizal at Bagumbayan, facing the firing squad with his back to them.">
+        </div>
+        <div class="text-box">
+            <span class="year-label">1896</span>
+            <h2>The Final Sacrifice</h2>
+            <h3>Consummatum Est</h3>
+            <p>After being implicated in the Katipunan revolution (despite his lack of direct involvement), Rizal was tried by a military court for rebellion. On the morning of <strong>December 30, 1896</strong>, at Bagumbayan (now Rizal Park), he was executed by firing squad. His last words were "Consummatum est!" (It is finished).</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>"I die without seeing the dawn brighten over my native land. You who have it to see, welcome it—and forget not those who have fallen during the night." — Jose Rizal</p>
+    </footer>
+
+</div> </div>
+    <!--TAB12--------------------------------------------------------------------------->
+    </div>
+   
+    <div class="community" id="community">
+        
+        <section>
+        <span class="facebook"><img src="facebook-svgrepo-com.svg">
+          Facebook</span><hr>
+
+           <nav>
+        <a href="https://www.facebook.com/share/g/1CupswVA6W/">https://www.facebook.com/share/g/1CupswVA6W/</a>
+        <a href="https://www.facebook.com/share/g/1J1cYYiAu5/"> https://www.facebook.com/share/g/1J1cYYiAu5</a>
+        <a  href="https://www.facebook.com/share/g/191XgTZweR/">https://www.facebook.com/share/g/191XgTZweR/</a>
+
+           <nav>
+        </section>
+        <section class="discord">
+            <span><img src="discord-v2-svgrepo-com.svg">
+          Discord</span><hr>
+          
+           <nav>
+        <a href="https://discord.gg/Xu5zb3n ">https://discord.gg/Xu5zb3n </a>
+        <a href="https://discord.gg/ACBD8AJ9yb "> https://discord.gg/ACBD8AJ9yb</a>
+        <a href="https://discord.com/invite/philippines ">https://discord.com/invite/philippines </a>
+           <nav>
+        </section>
+        <section class="website"><span><img src="google-color-svgrepo-com.svg">
+          Website</span><hr>
+          
+           <nav>
+        <a href="http://www.joserizal.ph/ ">http://www.joserizal.ph/ </a>
+        <a href=" https://www.reddit.com/r/FilipinoHistory/"> https://www.reddit.com/r/FilipinoHistory/</a>
+        <a href="https://www.knightsofrizal.org.ph/ ">https://www.knightsofrizal.org.ph/ </a>
+           <nav> </section>
+        <section> <span><img src="telegram-svgrepo-com.svg">
+          Telegram</span><hr>
+          
+           <nav>
+        <a href="https://www.google.com/search?q=https://t.me/ThePhilippineArchive "> https://www.google.com/search?q=https://t.me/ThePhilippineArchive</a>
+        <a href="https://www.google.com/search?q=https://t.me/PHHistoryHub ">https://www.google.com/search?q=https://t.me/PHHistoryHub </a>
+        <a href=" https://www.google.com/search?q=https://t.me/ProjectGutenbergPH"> https://www.google.com/search?q=https://t.me/ProjectGutenbergPH</a>
+           <nav> </section>
+    </div>
+
+    <footer id="foot">
+        <p> -----------------------------------------------------------------------------------------------------------------------------------------------------------------@Jose Rizal website project ------------------------------------------------------------------------------------------------------------------------------------------------------
+ </p>
+    </footer>
+
+
+
+
+    <article id="additional_info">
+        <div id="about">
+             <section><h1>ABOUT THIS WEBSITE<hr></h1></section>
+
+            <P><h5>The purpose of this website is to <strong>provide an information about our National hero Dr. Jose</strong><br>rizal to help the youth to know more jose rizal.If you want to know more our<br> history and Dr. jose rizal check out this recomended communities that topics joserizal<br> and our history <a href="#community">Click Here</a> </h4></P>
+
+
+
+        </div>
+        <div id="contactus"><h1>CONTACT US<hr></h1>
+        <p><h5>
+         Send emails to<br><br>
+         Emails: <span style="color: rgb(89, 82, 156);">nielarvingamers@gmail.com</span><br>
+
+         Emails: <span style="color: rgb(89 , 82 , 156);">johnkennethgimpaya54@gmail.com</span><br><br>
+         
+         Text your concerns here<br><br>
+        Contact number: <span style="color: rgb(89 , 82 , 156);">09192527102</span><br>
+        Contact number: <span style="color: rgb(89 , 82 , 156);">09206711976</span><br>
+
+
+
+
+
+        </h5></p>
+        </div>
+        <div id="learnmore">
+            
+            <div class="video1">
+                <h4 style="color: red;">Learn more about Jose rizal story check out this youtube content</h3>
+            <iframe width="100%" height="315" 
+           src="https://www.youtube.com/embed/vIhIwmHuJ4M?si=F31Q_MCnI46spnXY " 
+           title="YouTube video player" 
+           frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+           </iframe>
+
+         </div>
+
+
+         <div class="video2">
+                <h4 style="color: red;">Learn more about Rizal law check out this youtube content</h3>
+            <iframe width="100%" height="315" 
+           src="https://www.youtube.com/embed/z6b1A8aMBh4?si=WbhxtqRrAP5hbqJv " 
+           title="YouTube video player" 
+           frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+           </iframe>
+        </div>
+         
+        <div class="video3">
+                <h4 style="color: red;">Learn more about Jose rizal life and works check out this youtube content</h3>
+            <iframe width="100%" height="315" 
+           src="https://www.youtube.com/embed/sfrZVN_y8pA?si=L_LSPqei_K2bS4lN" 
+           title="YouTube video player" 
+           frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+           </iframe>
+
+         </div>
+           
+        </article>
+    </div>
+   
+    
+</body>
+     <script src="Rizal.js"></script>
+</html>
